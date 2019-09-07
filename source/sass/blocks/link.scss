@@ -11,14 +11,23 @@
   cursor: pointer;
   color: $color-white;
 
-  &--white-border {
-    color: white;
+  &--white-border,
+  &--blue-border {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     padding: 10px 20px;
     border-radius: 5px;
+  }
+
+  &--white-border {
+    color: white;
     border: 1px solid white;
+  }
+
+  &--blue-border {
+    color: $color-blue;
+    border: 1px solid $color-blue;
   }
 
   &--blue-fill {
