@@ -1,0 +1,40 @@
+.feedback {
+  background-color: $color-blue;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: $color-white;
+}
+
+.feedback__container {
+  padding-left: 50%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 408px;
+    height: 230px;
+    top: 60px;
+    left: 0;
+    z-index: 2;
+    background-image: url("../../img/airplane.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.feedback__title {
+  margin: 0;
+  font-family: $font-roboto;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.feedback__text {
+  font-family: $font-ptmono;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 30px;
+}
