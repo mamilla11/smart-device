@@ -15,7 +15,7 @@
   display: block;
   font-weight: normal;
   text-transform: none;
-  color: $text-color-gray;
+  color: $color-gray;
   font-family: $font-ptmono;
   font-size: 12px;
   line-height: 14px;
@@ -24,10 +24,9 @@
   &--bold {
     font-weight: bold;
     text-transform: capitalize;
-    color: $text-color-white;
+    color: $color-white;
     font-family: $font-roboto;
     font-size: 25px;
     line-height: 29px;
-
   }
 }

@@ -23,11 +23,11 @@
 
 .page-header__contact {
   position: relative;
-  font-family: PT Mono;
+  font-family: $font-ptmono;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $text-color-white;
+  color: $color-white;
   padding-left: 30px;
   padding-right: 60px;
 
@@ -37,11 +37,11 @@
   }
 
   &--mail::before {
-      width: 19px;
-      height: 14px;
-      top: 3px;
-      left: 0;
-      background-image: url("../../img/envelope.svg");
+    width: 19px;
+    height: 14px;
+    top: 3px;
+    left: 0;
+    background-image: url("../../img/envelope.svg");
   }
 
   &--phone::before {
@@ -59,7 +59,7 @@
 }
 
 .page-header__text {
-  color: $text-color-white;
+  color: $color-white;
   display: block;
 
   &--large {
