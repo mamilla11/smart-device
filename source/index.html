@@ -5,28 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная | Smart Device</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/PTMono-Regular.ttf" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.ttf" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.ttf" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
   <header class="page-header">
-    <div class="page-header__info">
-      <a class="logo link" href="index.html">
-        <img class="logo__image"/>
-        <p class="logo__title">
-            <span>Smart Device</span>
-            <span>Умные технологии</span>
+    <div class="page-header__wrapper">
+      <div class="page-header__info">
+        <a class="page-header__block logo link" href="index.html">
+          <img class="logo__image" src="img/logo.svg" width="52" height="52" alt="Логотип компании Smart Device"/>
+          <p class="logo__title">
+              <span class="logo__text logo__text--bold">Smart Device</span>
+              <span class="logo__text">умные технологии</span>
+          </p>
+        </a>
+        <div class="page-header__block page-header__contacts">
+          <p class="page-header__contact page-header__contact--mail">info@sd.ru</p>
+          <p class="page-header__contact page-header__contact--phone">+7 (495) 000 52 52</p>
+          <a class="link link--white-border" href="#">Заказать звонок</a>
+        </div>
+      </div>
+      <div class="page-header__content">
+        <p class="page-header__tagline">
+          <span class="page-header__text page-header__text--large">Печатные платы</span>
+          <span class="page-header__text page-header__text--small">производство и монтаж, поставка комплектующих, блоков и модулей</span>
         </p>
-      </a>
-      <p class="page-header__mail">info@sd.ru</p>
-      <p class="page-header__phone">+7 (495) 000 52 52</p>
-      <a class="link link--white-border" href="#">Заказать звонок</a>
-    </div>
-    <div class="page-header__content">
-      <p class="page-header__tagline">
-        <span class="page-header__text page-header__text--large">Печатные платы</span>
-        <span class="page-header__text page-header__text--small">производство и монтаж, поставка комплектующих, блоков и модулей</span>
-      </p>
-      <a class="link link--blue-fill" href="#">Получить бесплатную консультацию</a>
+        <div class="page-header__offer">
+          <a class="link link--blue-fill" href="#">Получить бесплатную консультацию</a>
+        </div>
+      </div>
     </div>
   </header>
   <section class="advantages">

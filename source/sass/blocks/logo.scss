@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo__image {
+  padding-top: 10px;
+}
+
+.logo__title {
+  padding-left: 10px;
+}
+
+.logo__text {
+  display: block;
+  font-weight: normal;
+  text-transform: none;
+  color: $text-color-gray;
+  font-family: $font-ptmono;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+
+  &--bold {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $text-color-white;
+    font-family: $font-roboto;
+    font-size: 25px;
+    line-height: 29px;
+
+  }
+}
