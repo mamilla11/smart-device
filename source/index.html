@@ -85,18 +85,20 @@
     </ul>
   </section>
   <section class="about page__container">
-    <h2 class="about__title">О компании</h2>
-    <p class="about__text">
-      Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии
-      с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-    </p>
-    <p class="about__text">
-      Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-      Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-      РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-    </p>
-    <div class="about__button">
-      <a class="link link--blue-border" href="#">Подробнее</a>
+    <div class="about__wrapper">
+      <h2 class="about__title">О компании</h2>
+      <p class="about__text">
+        Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии
+        с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+      </p>
+      <p class="about__text">
+        Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+        Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+        РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+      </p>
+      <div class="about__button">
+        <a class="about__link link link--blue-border" href="#">Подробнее</a>
+      </div>
     </div>
   </section>
   <section class="services">
@@ -159,11 +161,11 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__content">
-        <div class="page-footer__block">
-          <a class="logo link" href="index.html">
+        <div class="page-footer__block page-footer__block--socials">
+          <a class="page-footer__logo logo link" href="index.html">
               <img class="logo__image" src="img/logo.svg" width="52" height="52" alt="Логотип компании Smart Device"/>
             <p class="logo__title">
-                <span class="logo__text logo__text--bold logo__text--dark">Smart Device</span>
+                <span class="logo__text logo__text--bold logo__text--dark">Service Device</span>
                 <span class="logo__text">умные технологии</span>
             </p>
           </a>
@@ -196,7 +198,7 @@
             </ul>
           </div>
         </div>
-        <div class="page-footer__block">
+        <div class="page-footer__block page-footer__block--nav">
           <p class="page-footer__title">Разделы сайта</p>
           <nav class="page-footer__nav nav">
             <ul class="nav__list">
@@ -204,27 +206,27 @@
                   <a class="nav__link link link--text" href="#">О компании</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link link link--text" href="#">Продукты</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link link--text" href="#">Производство печатных плат</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link link--text" href="#">Монтаж печатных плат</a>
-                </li>
-                <li class="nav__item">
                   <a class="nav__link link link--text" href="#">Комплектующие</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link link link--text" href="#">Продукты</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link link link--text" href="#">Доставка</a>
                 </li>
                 <li class="nav__item">
+                  <a class="nav__link link link--text" href="#">Производство печатных плат</a>
+                </li>
+                <li class="nav__item">
                   <a class="nav__link link link--text" href="#">Контакты</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link link link--text" href="#">Монтаж печатных плат</a>
                 </li>
               </ul>
           </nav>
         </div>
-        <div class="page-footer__block">
+        <div class="page-footer__block page-footer__block--address">
           <p class="page-footer__title">Наш офис</p>
           <p class="page-footer__address">
             <span>г. Мытищи, Олимпийский проспект, д.10</span>
@@ -234,33 +236,39 @@
           </p>
         </div>
       </div>
-      <p class="page-footer__copyright">
-        <span>Все права защищены</span>
-        <span>1999-2018 SD Service Devices</span>
-        <span>Условия конфиденциальности</span>
-        <span>Developed by wow studio</span>
-      </p>
     </div>
+    <p class="page-footer__content page-footer__copyright">
+      <span class="page-footer__copyright-1">Все права защищены</span>
+      <span class="page-footer__copyright-2">1999-2018 SD Service Devices</span>
+      <span class="page-footer__copyright-3">Условия конфиденциальности</span>
+      <span class="page-footer__copyright-4">Developed by wow studio</span>
+    </p>
   </footer>
   <div class="overlay visually-hidden"></div>
-  <div class="popup visually-hidden">
+  <div class="popup">
     <p class="popup__title">Закажите звонок</p>
     <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form class="popup__form from">
-      <input class="form__field form__field--name" type="text" placeholder="Имя"
-              name="name" id="name" required/>
-      <input class="form__field form__field--phone" type="tel" placeholder="Телефон"
-              pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
-              name="phone" id="phone" required/>
-      <textarea class="form__field form__field--message" placeholder="Ваш вопрос"
-                  name="message" id="message" required></textarea>
-      <div class="form__agreement">
-        <input class="form__agreement" type="checkbox" id="agreement"
-                name="agreement" id="agreement" checked required>
-        <label for="agreement">Я согласен на обработку персональных данных</label>
+    <form class="feedback__form from">
+      <div class="form__block form__block--col">
+        <input class="form__field form__field--name form__field--col" type="text" placeholder="Имя"
+                name="name" id="name" required/>
+        <input class="form__field form__field--phone form__field--col" type="tel" placeholder="Телефон"
+                pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+                name="phone" id="phone" required/>
       </div>
-      <input class="form__button link link--white-border" type="submit"
-              name="send-form" id="send-form" value="Отправить"/>
+      <div class="form__block">
+        <textarea class="form__field form__field--message" placeholder="Ваш вопрос"
+                    name="message" id="message" required></textarea>
+      </div>
+      <div class="form__block form__block--col">
+        <div class="form__wrapper form__wrapper--col">
+          <input class="form__agreement" type="checkbox" id="agreement"
+                  name="agreement" id="agreement" checked required>
+          <label for="agreement">Я согласен на обработку персональных данных</label>
+        </div>
+        <input class="form__button form__button--col link link--white-border" type="submit"
+                name="send-form" id="send-form" value="Отправить"/>
+      </div>
     </form>
   </div>
 </body>

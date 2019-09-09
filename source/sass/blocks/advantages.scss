@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 60px;
+  padding-top: 112px;
 }
 
 .advantages__list {
@@ -14,13 +14,17 @@
 }
 
 .advantages__item {
-  width: 43%;
+  width: 48.7%;
+  flex-shrink: 0;
+  box-sizing: border-box;
   border-left: 3px solid $color-blue;
   border-right: 1px solid $color-light-gray;
   border-top: 1px solid $color-light-gray;
   border-bottom: 1px solid $color-light-gray;
-  margin-bottom: 25px;
-  padding: 25px 25px 60px 25px;
+  margin-bottom: 30px;
+  padding: 38px 40px 50px 40px;
+  min-height: 299px;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-blue;
@@ -46,6 +50,8 @@
   font-size: 24px;
   line-height: 34px;
   color: $color-blue;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .advantages__text {

@@ -25,8 +25,9 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    padding: 10px 20px;
+    padding: 14px 30px;
     border-radius: 5px;
+    letter-spacing: 0.05em;
   }
 
   &--white-border {
@@ -44,7 +45,8 @@
     font-size: 16px;
     line-height: 19px;
     border-radius: 5px;
-    padding: 15px 40px;
+    padding: 16px 45px;
+    letter-spacing: 0.05em;
     background-color: $color-blue;
   }
 
@@ -55,6 +57,7 @@
     line-height: 25px;
     color: $color-dark-gray;
     text-transform: none;
+    opacity: 0.5;
   }
 
   &--iconed {

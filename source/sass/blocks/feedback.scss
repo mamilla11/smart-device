@@ -1,12 +1,12 @@
 .feedback {
   background-color: $color-blue;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 75px;
   color: $color-white;
 }
 
 .feedback__container {
-  padding-left: 50%;
+  padding-left: 51%;
   position: relative;
 
   &::before {
@@ -36,5 +36,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
+  margin: 12px 0;
 }

@@ -1,6 +1,22 @@
 .about {
-  padding-top: 60px;
+  padding-top: 75px;
   position: relative;
+  margin-bottom: 110px;
+}
+
+.about__wrapper {
+  padding-left: 180px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 317px;
+    top: 75px;
+    left: 0;
+    background-image: url("../../img/about.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .about__title {
@@ -8,22 +24,10 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  padding-left: 180px;
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 0;
   margin: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 220px;
-    height: 317px;
-    top: 60px;
-    left: 0;
-    background-image: url("../../img/about.png");
-    background-repeat: no-repeat;
-  }
 }
 
 .about__text {
@@ -31,9 +35,15 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 180px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-right: 20px;
 }
 
 .about__button {
-  padding-left: 180px;
+  padding-top: 17px;
+}
+
+.about__link {
+  padding: 14px 50px;
 }

@@ -1,7 +1,6 @@
 .services {
   background-color: $color-dark-gray;
-  margin-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 128px;
 }
 
 .services__title {
@@ -10,7 +9,8 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-white;
-  padding-top: 60px;
+  padding-top: 90px;
+  margin-bottom: 50px;
 }
 
 .services__list {
@@ -25,6 +25,7 @@
 
 .services__item {
   position: relative;
+  width: 32%;
 
   &::before {
     content: "";
@@ -47,14 +48,15 @@
 }
 
 .services__link {
+  display: block;
   font-size: 0;
   line-height: 0;
   background-color: lighten($color-dark-gray, 10%);
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(40%);
-  height: 496px;
-  width: 296px;
+  width: 370px;
+  height: 620px;
 
   &--production {
     background-image: url("../../img/production@1x.jpg");
@@ -71,8 +73,8 @@
 
 .services__text {
   position: absolute;
-  top: 40px;
-  left: 20px;
+  top: 32px;
+  left: 45px;
   color: $color-white;
   font-family: $font-roboto;
   font-weight: normal;
@@ -80,5 +82,5 @@
   line-height: 30px;
   text-align: left;
   text-transform: none;
-  width: 60%;
+  width: 44%;
 }
