@@ -47,4 +47,18 @@
     padding: 15px 40px;
     background-color: $color-blue;
   }
+
+  &--text {
+    font-family: $font-ptmono;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-dark-gray;
+    text-transform: none;
+  }
+
+  &--iconed {
+    font-size: 0;
+    line-height: 0;
+  }
 }
