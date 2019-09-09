@@ -25,7 +25,6 @@
 
 .services__item {
   position: relative;
-  width: 32%;
 
   &::before {
     content: "";
@@ -36,7 +35,7 @@
     bottom: 0;
     right: 0;
     z-index: 1;
-    background-image: url("../../img/vector.svg");
+    background-image: url("../img/vector.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -51,30 +50,22 @@
   display: block;
   font-size: 0;
   line-height: 0;
-  background-color: lighten($color-dark-gray, 10%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(40%);
+}
+
+.services__image-wrapper {
+  display: block;
+  opacity: 0.2;
+}
+
+.services__image {
   width: 370px;
   height: 620px;
-
-  &--production {
-    background-image: url("../../img/production@1x.jpg");
-  }
-
-  &--assembly {
-    background-image: url("../../img/assembly@1x.jpg");
-  }
-
-  &--components {
-    background-image: url("../../img/components@1x.jpg");
-  }
 }
 
 .services__text {
   position: absolute;
-  top: 32px;
-  left: 45px;
+  top: 31px;
+  left: 44px;
   color: $color-white;
   font-family: $font-roboto;
   font-weight: normal;

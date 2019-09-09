@@ -11,7 +11,7 @@
   margin-bottom: 40px;
   align-items: center;
 
-  &--col {
+  &--popup {
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -44,7 +44,7 @@
     resize: none;
   }
 
-  &--col {
+  &--popup {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -58,16 +58,42 @@
   line-height: 16px;
   width: 47%;
 
-  &--col {
+  &--popup {
     width: 100%;
   }
 }
 
 .form__button {
   order: 1;
-  width: 47%;
+  width: 47.4%;
+  margin-top: 3px;
 
-  &--col {
+  &--popup {
     width: 100%;
   }
+}
+
+.form__agreement-label {
+  position: relative;
+  display: block;
+  padding-left: 32px;
+  margin-top: 6px;
+  margin-left: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border: 1px solid $color-white;
+    top: 2px;
+    left: 0;
+  }
+}
+
+.form__agreement:checked + .form__agreement-label::before {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: 2px 3px;
 }

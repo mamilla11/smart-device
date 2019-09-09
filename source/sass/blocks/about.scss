@@ -1,20 +1,20 @@
 .about {
   padding-top: 75px;
-  position: relative;
   margin-bottom: 110px;
 }
 
 .about__wrapper {
   padding-left: 180px;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
     width: 220px;
     height: 317px;
-    top: 75px;
-    left: 0;
-    background-image: url("../../img/about.png");
+    top: 5px;
+    left: -30px;
+    background-image: url("../img/about.png");
     background-repeat: no-repeat;
   }
 }

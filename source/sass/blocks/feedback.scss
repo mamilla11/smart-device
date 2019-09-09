@@ -1,8 +1,9 @@
 .feedback {
   background-color: $color-blue;
   padding-top: 90px;
-  padding-bottom: 75px;
+  padding-bottom: 72px;
   color: $color-white;
+  overflow: hidden;
 }
 
 .feedback__container {
@@ -12,13 +13,24 @@
   &::before {
     content: "";
     position: absolute;
-    width: 408px;
-    height: 230px;
-    top: 60px;
-    left: 0;
-    z-index: 2;
-    background-image: url("../../img/airplane.png");
-    background-size: cover;
+    width: 1000px;
+    height: 718px;
+    top: -90px;
+    left: -375px;
+    z-index: 1;
+    background-image: url("../img/triangles.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 511px;
+    height: 288px;
+    top: 70px;
+    left: -25px;
+    z-index: 1;
+    background-image: url("../img/airplane.png");
     background-repeat: no-repeat;
   }
 }
