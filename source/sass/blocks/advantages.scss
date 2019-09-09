@@ -1,5 +1,9 @@
 .advantages {
   padding-top: 112px;
+
+  @media (max-width: $width-tablet) {
+    padding-top: 55px;
+  }
 }
 
 .advantages__list {
@@ -38,6 +42,13 @@
   &:hover .advantages__title {
     color: $color-white;
   }
+
+  @media (max-width: $width-tablet) {
+    width: 48.1%;
+    border-left: 2px solid $color-blue;
+    padding: 23px 22px 8px 25px;
+    min-height: 232px;
+  }
 }
 
 .advantages__icon {
@@ -52,6 +63,11 @@
   color: $color-blue;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  @media (max-width: $width-tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .advantages__text {
@@ -59,4 +75,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+
+  @media (max-width: $width-tablet) {
+    margin: 11px 0;
+  }
 }

@@ -5,6 +5,10 @@
 
 .logo__image {
   padding: 5px 3px 5px 0;
+
+  @media (max-width: $width-tablet) {
+    margin-top: -12px;
+  }
 }
 
 .logo__title {
@@ -33,5 +37,11 @@
 
   &--dark {
     color: #203C42;
+  }
+
+  @media (max-width: $width-tablet) {
+    &--bold {
+      margin-top: -12px;
+    }
   }
 }

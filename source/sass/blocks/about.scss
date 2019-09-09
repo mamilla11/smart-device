@@ -1,6 +1,11 @@
 .about {
   padding-top: 75px;
   margin-bottom: 110px;
+
+  @media (max-width: $width-tablet) {
+    padding-top: 25px;
+    margin-bottom: 80px;
+  }
 }
 
 .about__wrapper {
@@ -17,6 +22,18 @@
     background-image: url("../img/about.png");
     background-repeat: no-repeat;
   }
+
+  @media (max-width: $width-tablet) {
+    padding-left: 185px;
+
+    &::before {
+      width: 176px;
+      height: 360px;
+      background-size: cover;
+      top: 0;
+      left: -34px;
+    }
+  }
 }
 
 .about__title {
@@ -28,6 +45,12 @@
   padding-bottom: 0;
   padding-right: 0;
   margin: 0;
+
+  @media (max-width: $width-tablet) {
+    font-size: 32px;
+    line-height: 140.62%;
+    margin-bottom: 26px;
+  }
 }
 
 .about__text {
@@ -38,12 +61,30 @@
   margin-bottom: 20px;
   margin-top: 20px;
   padding-right: 20px;
+
+  @media (max-width: $width-tablet) {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding-right: 11px;
+  }
 }
 
 .about__button {
   padding-top: 17px;
+
+  @media (max-width: $width-tablet) {
+    padding-top: 22px;
+    padding-left: 4px;
+  }
 }
 
 .about__link {
   padding: 14px 50px;
+}
+
+.about__hidden {
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
 }

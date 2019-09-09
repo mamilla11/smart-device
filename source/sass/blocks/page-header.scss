@@ -32,6 +32,12 @@
     background-image: url("../img/pcbs.png");
     background-repeat: no-repeat;
   }
+
+  @media (max-width: $width-tablet) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .page-header__info {
@@ -49,6 +55,12 @@
 
 .page-header__contacts {
   width: 46.8%;
+
+  @media (max-width: $width-tablet) {
+    margin-left: auto;
+    width: auto;
+    margin-right: 21px;
+  }
 }
 
 .page-header__contact {
@@ -75,6 +87,7 @@
       top: 3px;
       left: 0;
       background-image: url("../img/envelope.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -94,12 +107,52 @@
   &--link {
     padding: 14px 26px;
   }
+
+  @media (max-width: $width-tablet) {
+    font-size: 0;
+    line-height: 0;
+
+    &--mail {
+      padding-left: 0;
+      margin-right: 60px;
+
+      &::before {
+        width: 26px;
+        height: 19px;
+        background-size: cover;
+        top: -20px;
+      }
+    }
+
+    &--phone {
+      padding-left: 0;
+      margin-right: 0;
+
+      &::before {
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+        top: -22px;
+      }
+    }
+
+    &--link {
+      display: none;
+    }
+  }
 }
 
 .page-header__content {
   padding-top: 200px;
   padding-bottom: 278px;
   width: 52%;
+
+  @media (max-width: $width-tablet) {
+    padding-top: 85px;
+    padding-left: 70px;
+    padding-bottom: 165px;
+    width: 55%;
+  }
 }
 
 .page-header__text {
@@ -125,20 +178,46 @@
     font-size: 22px;
     line-height: 34px;
     padding-left: 90px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 66px;
+      height: 2px;
+      top: 15px;
+      left: 0;
+      background-image: url("../img/rect.svg");
+    }
   }
 
-  &--small::before {
-    content: "";
-    position: absolute;
-    width: 66px;
-    height: 2px;
-    top: 15px;
-    left: 0;
-    background-image: url("../img/rect.svg");
+  @media (max-width: $width-tablet) {
+    &--large {
+      font-size: 60px;
+      line-height: 70px;
+      margin-bottom: 29px;
+    }
+
+    &--small {
+      font-size: 18px;
+      line-height: 156.8%;
+      padding-left: 44px;
+
+      &::before {
+        width: 33px;
+        left: -5px;
+        top: 16px;
+      }
+    }
   }
 }
 
 .page-header__offer {
   padding-top: 30px;
   padding-left: 90px;
+
+  @media (max-width: $width-tablet) {
+    padding-top: 39px;
+    padding-left: 45px;
+    width: 379px;
+  }
 }
