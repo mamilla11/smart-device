@@ -34,6 +34,14 @@
       left: -34px;
     }
   }
+
+  @media (max-width: $width-mobile) {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .about__title {
@@ -67,6 +75,10 @@
     margin-bottom: 20px;
     margin-left: 5px;
     padding-right: 11px;
+  }
+
+  @media (max-width: $width-mobile) {
+    margin-left: 0;
   }
 }
 

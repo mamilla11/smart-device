@@ -9,6 +9,12 @@
   @media (max-width: $width-tablet) {
     margin-top: -12px;
   }
+
+  @media (max-width: $width-mobile) {
+    width: 38px;
+    height: 38px;
+    padding-bottom: 15px;
+  }
 }
 
 .logo__title {
@@ -36,7 +42,7 @@
   }
 
   &--dark {
-    color: #203C42;
+    color: #203c42;
   }
 
   @media (max-width: $width-tablet) {

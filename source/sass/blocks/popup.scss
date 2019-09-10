@@ -1,30 +1,30 @@
 .popup {
-    position: absolute;
-    top: 135px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 490px;
-    height: 605px;
-    background-color: $color-blue;
-    padding: 33px 39px 0 39px;
-    color: $color-white;
-    box-sizing: border-box;
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 490px;
+  height: 605px;
+  background-color: $color-blue;
+  padding: 33px 39px 0 39px;
+  color: $color-white;
+  box-sizing: border-box;
 }
 
 .popup__title {
-    font-family: $font-roboto;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 140.62%;
-    margin-top: 0;
-    margin-bottom: 12px;
+  font-family: $font-roboto;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .popup__text {
-    font-family: $font-ptmono;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    margin: 0 0 30px 0;
-    width: 90%;
+  font-family: $font-ptmono;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 30px 0;
+  width: 90%;
 }

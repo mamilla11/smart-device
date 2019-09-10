@@ -33,6 +33,21 @@
     background-image: url("../img/airplane.png");
     background-repeat: no-repeat;
   }
+
+  @media (max-width: $width-tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .feedback__title {
@@ -41,6 +56,11 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $width-mobile) {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
 }
 
 .feedback__text {

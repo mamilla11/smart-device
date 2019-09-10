@@ -18,6 +18,11 @@
     padding: 0 25px;
     box-sizing: border-box;
   }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 15px;
+    min-width: 320px;
+  }
 }
 
 .page__container {
@@ -30,7 +35,8 @@
     padding: 0 25px;
   }
 
-  // @media (max-width: $width-mobile) {
-  //   padding: 0 20px;
-  // }
+  @media (max-width: $width-mobile) {
+    padding: 0 15px;
+    min-width: 320px;
+  }
 }

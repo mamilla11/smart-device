@@ -15,6 +15,11 @@
     flex-direction: column;
     margin-bottom: 0;
   }
+
+  @media (max-width: $width-mobile) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .form__field {
@@ -48,6 +53,11 @@
     width: 100%;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $width-mobile) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .form__wrapper {
@@ -61,6 +71,10 @@
   &--popup {
     width: 100%;
   }
+
+  @media (max-width: $width-mobile) {
+    width: 100%;
+  }
 }
 
 .form__button {
@@ -70,6 +84,11 @@
 
   &--popup {
     width: 100%;
+  }
+
+  @media (max-width: $width-mobile) {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

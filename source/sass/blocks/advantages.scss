@@ -15,6 +15,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
+
+  @media (max-width: $width-mobile) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
 }
 
 .advantages__item {
@@ -48,6 +54,10 @@
     border-left: 2px solid $color-blue;
     padding: 23px 22px 8px 25px;
     min-height: 232px;
+  }
+
+  @media (max-width: $width-mobile) {
+    width: 100%;
   }
 }
 

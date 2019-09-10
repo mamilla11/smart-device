@@ -72,4 +72,10 @@
       padding: 17px 30px;
     }
   }
+
+  @media (max-width: $width-mobile) {
+    &--blue-fill {
+      padding: 17px 20px;
+    }
+  }
 }
