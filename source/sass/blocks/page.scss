@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   color: $color-main;
+  min-width: 320px;
 }
 
 .page__container-large {
@@ -15,12 +16,10 @@
   margin: 0 auto;
 
   @media (max-width: $width-tablet) {
-    padding: 0 25px;
-    box-sizing: border-box;
+    padding: 0;
   }
 
   @media (max-width: $width-mobile) {
-    padding: 0 15px;
     min-width: 320px;
   }
 }
