@@ -6,7 +6,7 @@ var formPopup = document.querySelector('.popup');
 var overlay = document.querySelector('.overlay');
 var nameInput = document.querySelector('#name');
 
-openPopupButton.addEventListener('click', function() {
+openPopupButton.addEventListener('click', function () {
   showOverlay();
   showPopup();
   nameInput.focus();
@@ -17,12 +17,12 @@ closePopupButton.addEventListener('click', function () {
   closePopup();
 });
 
-overlay.addEventListener("click", function(evt) {
+overlay.addEventListener('click', function () {
   hideOverlay();
   closePopup();
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener('keydown', function (evt) {
   var escape = 27;
   if (evt.keyCode === escape) {
     hideOverlay();
@@ -32,16 +32,16 @@ window.addEventListener("keydown", function(evt) {
 
 var showPopup = function () {
   formPopup.classList.remove('visually-hidden');
-}
+};
 
 var closePopup = function () {
   formPopup.classList.add('visually-hidden');
-}
+};
 
 var showOverlay = function () {
-  overlay.classList.add("overlay--show");
-}
+  overlay.classList.add('overlay--show');
+};
 
 var hideOverlay = function () {
-  overlay.classList.remove("overlay--show");
-}
+  overlay.classList.remove('overlay--show');
+};

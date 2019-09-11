@@ -102,6 +102,8 @@
   line-height: 18px;
   color: $color-white;
   background-repeat: no-repeat;
+  text-transform: none;
+  margin-top: 14px;
 
   &::before {
     content: "";
@@ -142,6 +144,7 @@
   @media (max-width: $width-tablet) {
     font-size: 0;
     line-height: 0;
+    margin-top: 0;
 
     &--mail {
       padding-left: 0;
@@ -302,7 +305,7 @@
   }
 }
 
-.page-header__link {
+.page-header__span {
   &--large {
     display: block;
   }

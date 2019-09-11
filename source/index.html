@@ -17,7 +17,7 @@
   <header class="page-header">
     <div class="page__container-large page-header__wrapper">
       <div class="page-header__info">
-        <a class="page-header__block logo link" href="index.html">
+        <a class="page-header__block logo link">
           <img class="logo__image logo__image--header" src="img/logo.svg" width="52" height="52" alt="Логотип компании Smart Device"/>
           <p class="logo__title">
               <span class="logo__text logo__text--bold">Smart Device</span>
@@ -25,8 +25,8 @@
           </p>
         </a>
         <div class="page-header__block page-header__contacts">
-          <p class="page-header__contact page-header__contact--mail">info@sd.ru</p>
-          <p class="page-header__contact page-header__contact--phone">+7 (495) 000 52 52</p>
+          <a class="link page-header__contact page-header__contact--mail" href="mailto:info@sd.ru">info@sd.ru</p>
+          <a class="link page-header__contact page-header__contact--phone" href="callto:84950005252">+7 (495) 000 52 52</p>
           <a class="link link--white-border page-header__contact--link" href="#">Заказать звонок</a>
         </div>
       </div>
@@ -36,11 +36,13 @@
           <span class="page-header__text page-header__text--small">производство и монтаж, поставка комплектующих, блоков и модулей</span>
         </p>
         <div class="page-header__offer">
-          <a class="page-header__link page-header__link--large link link--blue-fill" href="#">
-            Получить бесплатную консультацию
-          </a>
-          <a class="page-header__link page-header__link--small link link--blue-fill" href="#">
-            Бесплатная консультация
+          <a class="page-header__link link link--blue-fill" href="#">
+            <span class="page-header__span page-header__span--large">
+              Получить бесплатную консультацию
+            </span>
+            <span class="page-header__span page-header__span--small">
+              Бесплатная консультация
+            </span>
           </a>
         </div>
       </div>
@@ -110,11 +112,10 @@
   </section>
   <section class="services">
     <div class="page__container">
-      <h2 class="visually-hidden">Услуги</h2>
-      <p class="services__title">Service Device предлагает следующие товары и услуги</p>
+      <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
       <ul class="services__list">
         <li class="services__item">
-          <a class="services__link services__link--production link" href="#" alt="Производство печатных плат">
+          <a class="services__link services__link--production link" href="#" aria-label="Производство печатных плат">
             Производство печатных плат
             <picture class="services__image-wrapper">
               <source type="image/webp" media="(min-width: 1500px)" srcset="img/production@1x.webp 1x, img/production@2x.webp 2x">
@@ -129,7 +130,7 @@
           <p class="services__text">Производство печатных плат</p>
         </li>
         <li class="services__item">
-          <a class="services__link services__link--assembly link" href="#" alt="Монтаж печатных плат">
+          <a class="services__link services__link--assembly link" href="#" aria-label="Монтаж печатных плат">
             Монтаж печатных плат
             <picture class="services__image-wrapper">
               <source type="image/webp" media="(min-width: 1500px)" srcset="img/assembly@1x.webp 1x, img/assembly@2x.webp 2x">
@@ -144,7 +145,7 @@
           <p class="services__text">Монтаж печатных плат</p>
         </li>
         <li class="services__item">
-          <a class="services__link services__link--components link" href="#" alt="Комплектующие для светотехники">
+          <a class="services__link services__link--components link" href="#" aria-label="Комплектующие для светотехники">
             Комплектующие для светотехники
             <picture class="services__image-wrapper">
               <source type="image/webp" media="(min-width: 1500px)" srcset="img/components@1x.webp 1x, img/components@2x.webp 2x">
@@ -196,7 +197,7 @@
     <div class="page-footer__wrapper">
       <div class="page__container-large page-footer__content">
         <div class="page-footer__block page-footer__block--socials">
-          <a class="page-footer__logo logo link" href="index.html">
+          <a class="page-footer__logo logo link">
               <img class="logo__image logo__image--footer" src="img/logo.svg" width="52" height="52" alt="Логотип компании Smart Device"/>
             <p class="logo__title">
                 <span class="logo__text logo__text--bold logo__text--dark">Service Device</span>
