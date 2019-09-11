@@ -1,15 +1,47 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+var openPopupButton = document.querySelector('.page-header__contact--link');
+var closePopupButton = document.querySelector('.popup__button--close');
+var formPopup = document.querySelector('.popup');
+var overlay = document.querySelector('.overlay');
+var nameInput = document.querySelector('#name');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+openPopupButton.addEventListener('click', function() {
+  showOverlay();
+  showPopup();
+  nameInput.focus();
+});
+
+closePopupButton.addEventListener('click', function () {
+  hideOverlay();
+  closePopup();
+});
+
+overlay.addEventListener("click", function(evt) {
+  hideOverlay();
+  closePopup();
+});
+
+window.addEventListener("keydown", function(evt) {
+  var escape = 27;
+  if (evt.keyCode === escape) {
+    hideOverlay();
+    closePopup();
   }
 });
+
+var showPopup = function () {
+  formPopup.classList.remove('visually-hidden');
+}
+
+var closePopup = function () {
+  formPopup.classList.add('visually-hidden');
+}
+
+var showOverlay = function () {
+  overlay.classList.add("overlay--show");
+}
+
+var hideOverlay = function () {
+  overlay.classList.remove("overlay--show");
+}
