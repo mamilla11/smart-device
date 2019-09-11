@@ -4,6 +4,10 @@
   @media (max-width: $width-tablet) {
     padding-top: 55px;
   }
+
+  @media (max-width: $width-mobile) {
+    padding-top: 37px;
+  }
 }
 
 .advantages__list {
@@ -58,6 +62,9 @@
 
   @media (max-width: $width-mobile) {
     width: 100%;
+    padding: 25px 15px 12px 25px;
+    min-height: 230px;
+    margin-bottom: 20px;
   }
 }
 
