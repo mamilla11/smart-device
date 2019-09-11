@@ -51,12 +51,14 @@
 
   @media (max-width: $width-mobile) {
     padding: 0 15px;
+    box-sizing: border-box;
 
     &::after {
       width: 301px;
       height: 220px;
       top: 73px;
-      right: 22px;
+      right: -6px;
+      z-index: 0;
     }
 
     &::before {
@@ -87,7 +89,8 @@
     margin-right: 21px;
   }
 
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile) {
+    margin-right: 25px;
   }
 }
 
@@ -168,6 +171,13 @@
       display: none;
     }
   }
+
+  @media (max-width: $width-mobile) {
+    &--mail {
+      padding-left: 0;
+      margin-right: 48px;
+    }
+  }
 }
 
 .page-header__content {
@@ -183,9 +193,11 @@
   }
 
   @media (max-width: $width-mobile) {
+    position: relative;
+    z-index: 1;
     padding-left: 0;
-    padding-top: 204px;
-    padding-bottom: 58px;
+    padding-top: 200px;
+    padding-bottom: 70px;
     margin-right: 0;
     width: 100%;
     display: flex;
@@ -285,6 +297,7 @@
   @media (max-width: $width-mobile) {
     width: 100%;
     padding-left: 0;
+    padding-top: 26px;
     box-sizing: border-box;
   }
 }

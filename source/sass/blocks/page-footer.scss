@@ -6,6 +6,10 @@
   @media (max-width: $width-tablet) {
     padding-top: 17px;
   }
+
+  @media (max-width: $width-mobile) {
+    padding-top: 45px;
+  }
 }
 
 .page-footer__wrapper {
@@ -98,6 +102,7 @@
 
   @media (max-width: $width-mobile) {
     padding: 0 15px;
+    margin-bottom: 70px;
   }
 }
 
@@ -114,7 +119,7 @@
   }
 
   @media (max-width: $width-mobile) {
-    padding: 0 15px;
+    padding: 0 15px 40px 15px;
   }
 }
 
@@ -127,6 +132,11 @@
   text-transform: uppercase;
   margin-bottom: 24px;
   letter-spacing: 0.05em;
+
+  @media (max-width: $width-mobile) {
+    padding-top: 13px;
+    margin-bottom: 26px;
+  }
 }
 
 .page-footer__address {
@@ -141,6 +151,8 @@
 
   @media (max-width: $width-mobile) {
     width: 80%;
+    padding-top: 8px;
+    padding-bottom: 10px;
   }
 }
 
@@ -163,6 +175,10 @@
     justify-content: space-between;
     padding-bottom: 22px;
   }
+
+  @media (max-width: $width-mobile) {
+    padding-top: 17px;
+  }
 }
 
 .page-footer__copyright-1 {
@@ -184,10 +200,23 @@
     width: 250px;
     height: 30px;
   }
+
+  @media (max-width: $width-mobile) {
+    display: flex;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 125px;
+    width: 233px;
+  }
 }
 
 .page-footer__copyright-3 {
   width: 44%;
+
+  @media (max-width: $width-mobile) {
+    margin-bottom: 22px;
+  }
 }
 
 .page-footer__copyright-4 {
@@ -248,5 +277,11 @@
 
   @media (max-width: $width-tablet) {
     width: 100%;
+  }
+}
+
+.page-footer__nav {
+  @media (max-width: $width-mobile) {
+    display: none;
   }
 }

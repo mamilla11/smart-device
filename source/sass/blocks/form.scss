@@ -63,6 +63,10 @@
   @media (max-width: $width-mobile) {
     width: 100%;
     margin-bottom: 30px;
+
+    &--message {
+      height: 104px;
+    }
   }
 }
 
@@ -94,7 +98,7 @@
 
   @media (max-width: $width-mobile) {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }
 
@@ -114,6 +118,10 @@
     border: 1px solid $color-white;
     top: 2px;
     left: 0;
+  }
+
+  @media (max-width: $width-mobile) {
+    margin-left: 3px;
   }
 }
 

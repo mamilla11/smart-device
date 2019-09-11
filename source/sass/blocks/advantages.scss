@@ -62,9 +62,9 @@
 
   @media (max-width: $width-mobile) {
     width: 100%;
-    padding: 25px 15px 12px 25px;
+    padding: 25px 13px 12px 25px;
     min-height: 230px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
@@ -84,6 +84,13 @@
   @media (max-width: $width-tablet) {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 20px;
+    line-height: 140.62%;
+    margin-top: 5px;
+    padding-right: 5px
   }
 }
 

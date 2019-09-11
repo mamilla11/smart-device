@@ -6,6 +6,11 @@
     padding-top: 27px;
     margin-bottom: 80px;
   }
+
+  @media (max-width: $width-mobile) {
+    padding-top: 40px;
+    margin-bottom: 65px;
+  }
 }
 
 .about__wrapper {
@@ -59,6 +64,12 @@
     line-height: 140.62%;
     margin-bottom: 26px;
   }
+
+  @media (max-width: $width-mobile) {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 21px;
+  }
 }
 
 .about__text {
@@ -79,6 +90,8 @@
 
   @media (max-width: $width-mobile) {
     margin-left: 0;
+    padding-right: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -88,6 +101,11 @@
   @media (max-width: $width-tablet) {
     padding-top: 22px;
     padding-left: 4px;
+  }
+
+  @media (max-width: $width-mobile) {
+    margin-top: -13px;
+    padding-top: 0;
   }
 }
 
