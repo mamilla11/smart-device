@@ -4,7 +4,9 @@
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: local("RobotoCondensed-Regular"),
+  src: local("RobotoCondensed Regular"),
+    local("RobotoCondensed-Regular"),
+    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
     url("../fonts/RobotoCondensed-Regular.woff") format("woff");
   font-display: swap;
 }
@@ -13,7 +15,9 @@
   font-family: "Roboto Condensed";
   font-style: bold;
   font-weight: 700;
-  src: local("RobotoCondensed-Bold"),
+  src: local("RobotoCondensed Bold"),
+    local("RobotoCondensed-Bold"),
+    url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
     url("../fonts/RobotoCondensed-Bold.woff") format("woff");
   font-display: swap;
 }
@@ -22,7 +26,9 @@
   font-family: "PT Mono";
   font-style: bold;
   font-weight: 400;
-  src: local("PTMono-Regular"),
+  src: local("PTMono Regular"),
+    local("PTMono-Regular"),
+    url("../fonts/PTMono-Regular.woff2") format("woff2"),
     url("../fonts/PTMono-Regular.woff") format("woff");
   font-display: swap;
 }
