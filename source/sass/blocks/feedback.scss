@@ -4,6 +4,11 @@
   padding-bottom: 72px;
   color: $color-white;
   overflow: hidden;
+
+  @media (max-width: $width-tablet) {
+    padding-top: 75px;
+    padding-bottom: 64px;
+  }
 }
 
 .feedback__container {
@@ -70,4 +75,14 @@
   line-height: 22px;
   padding-bottom: 38px;
   margin: 12px 0;
+
+  @media (max-width: $width-tablet) {
+    margin: 14px 0 17px 7px;
+  }
+}
+
+.feedback__form {
+  @media (max-width: $width-tablet) {
+    margin-left: 7px;
+  }
 }

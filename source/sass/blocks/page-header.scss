@@ -34,6 +34,21 @@
   }
 
   @media (max-width: $width-tablet) {
+    padding: 0 25px;
+    &::after {
+      width: 465px;
+      height: 340px;
+      background-size: contain;
+      top: 93px;
+      right: -207px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: $width-mobile) {
     &::after,
     &::before {
       display: none;
@@ -245,6 +260,7 @@
 .page-header__offer {
   padding-top: 30px;
   padding-left: 90px;
+  width: 407px;
 
   @media (max-width: $width-tablet) {
     padding-top: 39px;

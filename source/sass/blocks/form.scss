@@ -54,6 +54,12 @@
     margin-bottom: 30px;
   }
 
+  @media (max-width: $width-tablet) {
+    &--message {
+      height: 164px;
+    }
+  }
+
   @media (max-width: $width-mobile) {
     width: 100%;
     margin-bottom: 30px;
