@@ -8,6 +8,7 @@
 
 .page-header__wrapper {
   position: relative;
+  padding-top: 13px;
 
   &::before {
     content: "";
@@ -91,6 +92,7 @@
 
   @media (max-width: $width-mobile) {
     margin-right: 25px;
+    margin-top: -14px;
   }
 }
 
@@ -144,7 +146,7 @@
   @media (max-width: $width-tablet) {
     font-size: 0;
     line-height: 0;
-    margin-top: 0;
+    margin-top: 14px;
 
     &--mail {
       padding-left: 0;
@@ -184,14 +186,14 @@
 }
 
 .page-header__content {
-  padding-top: 200px;
+  padding-top: 176px;
   padding-bottom: 278px;
   width: 52%;
 
   @media (max-width: $width-tablet) {
-    padding-top: 85px;
+    padding-top: 76px;
     padding-left: 70px;
-    padding-bottom: 165px;
+    padding-bottom: 162px;
     width: 55%;
   }
 
@@ -199,7 +201,7 @@
     position: relative;
     z-index: 1;
     padding-left: 0;
-    padding-top: 200px;
+    padding-top: 187px;
     padding-bottom: 70px;
     margin-right: 0;
     width: 100%;
@@ -269,7 +271,7 @@
       font-size: 40px;
       line-height: 47px;
       margin-left: 0;
-      margin-bottom: 26px;
+      margin-bottom: 10px;
     }
 
     &--small {
@@ -287,7 +289,7 @@
 }
 
 .page-header__offer {
-  padding-top: 30px;
+  padding-top: 24px;
   padding-left: 90px;
   width: 407px;
 
@@ -302,6 +304,7 @@
     padding-left: 0;
     padding-top: 26px;
     box-sizing: border-box;
+    display: flex;
   }
 }
 
@@ -327,8 +330,10 @@
   }
 }
 
-.page-header .logo__title {
+.page-header__logo {
   @media (max-width: $width-mobile) {
-    display: none;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
   }
 }

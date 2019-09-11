@@ -65,6 +65,7 @@
     background-image: url("../img/vector.svg");
     background-position: center center;
     background-repeat: no-repeat;
+    pointer-events: none;
   }
 
   &:hover,
