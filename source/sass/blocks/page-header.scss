@@ -82,7 +82,9 @@
 }
 
 .page-header__contacts {
-  width: 46.8%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 
   @media (max-width: $width-tablet) {
     margin-left: auto;

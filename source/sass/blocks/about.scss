@@ -49,7 +49,7 @@
   }
 }
 
-.about__title {
+.about h2 {
   font-family: $font-roboto;
   font-weight: normal;
   font-size: 36px;
@@ -72,7 +72,7 @@
   }
 }
 
-.about__text {
+.about p {
   font-family: $font-ptmono;
   font-weight: normal;
   font-size: 16px;
@@ -95,22 +95,17 @@
   }
 }
 
-.about__button {
-  padding-top: 17px;
+.about__link {
+  margin-top: 27px;
+  padding: 14px 50px;
 
   @media (max-width: $width-tablet) {
-    padding-top: 22px;
-    padding-left: 4px;
+    margin-top: 27px;
   }
 
   @media (max-width: $width-mobile) {
     margin-top: -13px;
-    padding-top: 0;
   }
-}
-
-.about__link {
-  padding: 14px 50px;
 }
 
 .about__hidden {

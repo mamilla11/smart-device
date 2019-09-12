@@ -68,11 +68,6 @@
     pointer-events: none;
   }
 
-  &:hover,
-  &:focus {
-    opacity: 0.5;
-  }
-
   @media (max-width: $width-tablet) {
     width: 100%;
     margin-bottom: 48px;
@@ -89,12 +84,12 @@
   line-height: 0;
 }
 
-.services__image-wrapper {
+.services__item picture {
   display: block;
   opacity: 0.2;
 }
 
-.services__image {
+.services__item img {
   width: 370px;
   height: 620px;
 
@@ -104,7 +99,7 @@
   }
 }
 
-.services__text {
+.services__item h3 {
   position: absolute;
   top: 31px;
   left: 44px;

@@ -45,11 +45,11 @@
     color: $color-white;
   }
 
-  &:hover .advantages__icon {
+  &:hover svg {
     fill: $color-white;
   }
 
-  &:hover .advantages__title {
+  &:hover h3 {
     color: $color-white;
   }
 
@@ -68,11 +68,11 @@
   }
 }
 
-.advantages__icon {
+.advantages__item svg {
   fill: $color-blue;
 }
 
-.advantages__title {
+.advantages__item h3 {
   font-family: $font-roboto;
   font-weight: normal;
   font-size: 24px;
@@ -94,7 +94,7 @@
   }
 }
 
-.advantages__text {
+.advantages__item p {
   font-family: $font-ptmono;
   font-weight: normal;
   font-size: 16px;

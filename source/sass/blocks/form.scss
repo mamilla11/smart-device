@@ -28,8 +28,8 @@ form {
   flex-shrink: 0;
 }
 
-input[type=text],
-input[type=tel],
+input[type="text"],
+input[type="tel"],
 textarea {
   background-color: lighten($color-blue, 8%);
   border: none;
@@ -56,8 +56,8 @@ textarea {
   }
 }
 
-.feedback__container input[type=text],
-.feedback__container input[type=tel] {
+.feedback__container input[type="text"],
+.feedback__container input[type="tel"] {
   width: 47%;
 
   @media (max-width: $width-mobile) {
@@ -67,8 +67,8 @@ textarea {
   }
 }
 
-.popup input[type=text],
-.popup input[type=tel] {
+.popup input[type="text"],
+.popup input[type="tel"] {
   width: 100%;
   margin-bottom: 33px;
   padding: 14px 20px 18px 24px;
@@ -96,7 +96,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-.feedback__container input[type=submit] {
+.feedback__container input[type="submit"] {
   order: 1;
   width: 47.4%;
   margin-top: 3px;
@@ -107,7 +107,7 @@ textarea {
   }
 }
 
-.popup input[type=submit] {
+.popup input[type="submit"] {
   order: 1;
   margin-top: 0;
   margin-bottom: 27px;
@@ -146,7 +146,7 @@ form label {
   }
 }
 
-input[type=checkbox]:checked + label::before {
+input[type="checkbox"]:checked + label::before {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: 2px 3px;
