@@ -290,23 +290,20 @@
   }
 }
 
-.page-header__offer {
-  padding-top: 24px;
-  padding-left: 90px;
-  width: 407px;
+.page-header__link {
+  margin-top: 25px;
+  margin-left: 92px;
 
   @media (max-width: $width-tablet) {
-    padding-top: 39px;
-    padding-left: 45px;
-    width: 379px;
+    margin-top: 37px;
+    margin-left: 44px;
+    width: 320px;
   }
 
   @media (max-width: $width-mobile) {
-    width: 100%;
-    padding-left: 0;
-    padding-top: 26px;
-    box-sizing: border-box;
-    display: flex;
+    margin-top: 26px;
+    margin-left: 0;
+    width: 250px;
   }
 }
 

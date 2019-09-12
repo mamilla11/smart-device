@@ -22,23 +22,21 @@
         </a>
         <div class="page-header__block page-header__contacts">
           <a class="link page-header__contact page-header__contact--mail" href="mailto:info@sd.ru">info@sd.ru</p>
-          <a class="link page-header__contact page-header__contact--phone" href="callto:84950005252">+7 (495) 000 52 52</p>
+          <a class="link page-header__contact page-header__contact--phone" href="tel:84950005252">+7 (495) 000 52 52</p>
           <a class="link link--white-border page-header__contact--link" href="#">Заказать звонок</a>
         </div>
       </div>
       <div class="page-header__content">
         <h1 class="page-header__text page-header__text--large">Печатные платы</h1>
         <p class="page-header__text page-header__text--small">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <div class="page-header__offer">
-          <a class="page-header__link link link--blue-fill" href="#">
-            <span class="page-header__span page-header__span--large">
-              Получить бесплатную консультацию
-            </span>
-            <span class="page-header__span page-header__span--small">
-              Бесплатная консультация
-            </span>
-          </a>
-        </div>
+        <a class="page-header__link link link--blue-fill" href="#">
+          <span class="page-header__span page-header__span--large">
+            Получить бесплатную консультацию
+          </span>
+          <span class="page-header__span page-header__span--small">
+            Бесплатная консультация
+          </span>
+        </a>
       </div>
     </div>
   </header>
@@ -107,7 +105,7 @@
       <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
       <ul class="services__list">
         <li class="services__item">
-          <a class="services__link services__link--production link" href="#" aria-label="Производство печатных плат">
+          <a class="services__link services__link--production link" href="#">
             <h3>Производство печатных плат</h3>
             <picture>
               <source type="image/webp" media="(min-width: 1500px)" srcset="img/production@1x.webp 1x, img/production@2x.webp 2x">
@@ -121,7 +119,7 @@
           </a>
         </li>
         <li class="services__item">
-          <a class="services__link services__link--assembly link" href="#" aria-label="Монтаж печатных плат">
+          <a class="services__link services__link--assembly link" href="#">
             <h3>Монтаж печатных плат</h3>
             <picture>
               <source type="image/webp" media="(min-width: 1500px)" srcset="img/assembly@1x.webp 1x, img/assembly@2x.webp 2x">
@@ -135,7 +133,7 @@
           </a>
         </li>
         <li class="services__item">
-          <a class="services__link services__link--components link" href="#" aria-label="Комплектующие для светотехники">
+          <a class="services__link services__link--components link" href="#">
             <h3>Комплектующие для светотехники</h3>
             <picture>
               <source type="image/webp" media="(min-width: 1500px)" srcset="img/components@1x.webp 1x, img/components@2x.webp 2x">
@@ -154,22 +152,19 @@
   <section class="feedback">
     <div class="page__container">
       <div class="feedback__container">
-        <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
-        <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
+        <h2>Остались вопросы? Задайте их нам!</h2>
+        <p>Мы проконсультируем Вас бесплатно</p>
         <form>
-          <input type="text" placeholder="Имя"name="name" id="name" required/>
           <label class="visually-hidden" for="name">Имя</label>
+          <input type="text" placeholder="Имя"name="name" id="name" required/>
+          <label class="visually-hidden" for="phone">Телефон</label>
           <input type="tel" placeholder="Телефон" name="phone" id="phone"
                 pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required/>
-          <label class="visually-hidden" for="phone">Телефон</label>
-          <textarea placeholder="Ваш вопрос" name="message" id="message" required></textarea>
           <label class="visually-hidden" for="message">Текст сообщения</label>
-
-          <div class="form__wrapper">
-            <input class="visually-hidden" type="checkbox" id="agreement"
-                    name="agreement" id="agreement" checked required>
-            <label for="agreement">Я согласен на обработку персональных данных</label>
-          </div>
+          <textarea placeholder="Ваш вопрос" name="message" id="message" required></textarea>
+          <input class="visually-hidden" type="checkbox" id="agreement"
+                  name="agreement" id="agreement" checked required>
+          <label for="agreement">Я согласен на обработку персональных данных</label>
           <input class="link link--white-border" type="submit"
                   name="send-form" id="send-form" value="Задать вопрос"/>
         </form>
@@ -244,9 +239,9 @@
           <p class="page-footer__title">Наш офис</p>
           <p class="page-footer__address">
             <span>г. Мытищи, Олимпийский проспект, д.10</span>
-            <a class="link link--text" href="callto:84955894050">+7 (495) 589-40-50</a>
-            <a class="link link--text" href="callto:89250038767">+7 (925) 003-87-67</a>
-            <a class="link link--text" href="callto:892692608079">+7 (926) 926-080-79</a>
+            <a class="link link--text" href="tel:84955894050">+7 (495) 589-40-50</a>
+            <a class="link link--text" href="tel:89250038767">+7 (925) 003-87-67</a>
+            <a class="link link--text" href="tel:892692608079">+7 (926) 926-080-79</a>
           </p>
         </div>
       </div>
@@ -264,20 +259,17 @@
     <button class="popup__button popup__button--close" type="button">Закрыть</button>
     <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form>
-      <input type="text" placeholder="Имя" name="name" id="name" required/>
       <label class="visually-hidden" for="name">Имя</label>
+      <input type="text" placeholder="Имя" name="name" id="name" required/>
+      <label class="visually-hidden" for="phone">Телефон</label>
       <input type="tel" placeholder="Телефон" name="phone" id="phone"
               pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required/>
-      <label class="visually-hidden" for="phone">Телефон</label>
+      <label class="visually-hidden" for="message">Ваш вопрос</label>
       <textarea placeholder="Ваш вопрос"
                   name="message" id="message" required></textarea>
-      <label class="visually-hidden" for="message">Ваш вопрос</label>
-
-      <div class="form__wrapper form__wrapper--popup">
-        <input class="visually-hidden" type="checkbox" id="agreement"
-                name="agreement" id="agreement" checked required>
-        <label for="agreement">Я согласен на обработку персональных данных</label>
-      </div>
+      <input class="visually-hidden" type="checkbox" id="agreement"
+              name="agreement" id="agreement" checked required>
+      <label for="agreement">Я согласен на обработку персональных данных</label>
       <input class="link link--white-border" type="submit"
               name="send-form" id="send-form" value="Отправить"/>
     </form>
