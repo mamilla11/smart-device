@@ -2,6 +2,7 @@
   background-color: $color-dark-gray;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 20px;
   overflow: hidden;
 }
@@ -191,6 +192,8 @@
   padding-top: 176px;
   padding-bottom: 278px;
   width: 52%;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: $width-tablet) {
     padding-top: 76px;
@@ -200,8 +203,6 @@
   }
 
   @media (max-width: $width-mobile) {
-    position: relative;
-    z-index: 1;
     padding-left: 0;
     padding-top: 187px;
     padding-bottom: 70px;

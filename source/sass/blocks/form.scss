@@ -9,6 +9,8 @@ form {
   font-size: 16px;
   line-height: 22px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 
 input[type="text"],

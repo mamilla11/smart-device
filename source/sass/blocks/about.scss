@@ -17,35 +17,19 @@
   padding-left: 180px;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 220px;
-    height: 317px;
-    top: 5px;
-    left: -30px;
-    background-image: url("../img/about.png");
-    background-repeat: no-repeat;
-  }
+  background-image: url("../img/about.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -30px 7px;
 
   @media (max-width: $width-tablet) {
     padding-left: 185px;
-
-    &::before {
-      width: 176px;
-      height: 360px;
-      background-size: cover;
-      top: 0;
-      left: -34px;
-    }
+    background-position: -32px 0;
   }
 
   @media (max-width: $width-mobile) {
     padding-left: 0;
-
-    &::before {
-      display: none;
-    }
+    background: none;
   }
 }
 
@@ -96,7 +80,7 @@
 }
 
 .about__link {
-  margin-top: 27px;
+  margin-top: 20px;
   padding: 14px 50px;
 
   @media (max-width: $width-tablet) {

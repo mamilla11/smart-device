@@ -66,6 +66,8 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: $width-mobile) {
     font-size: 28px;
@@ -80,6 +82,8 @@
   line-height: 22px;
   padding-bottom: 38px;
   margin: 14px 0;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: $width-tablet) {
     margin: 14px 0 17px 7px;

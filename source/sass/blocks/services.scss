@@ -1,6 +1,6 @@
 .services {
   background-color: $color-dark-gray;
-  padding-bottom: 128px;
+  padding-bottom: 88px;
 
   @media (max-width: $width-tablet) {
     padding-bottom: 28px;
@@ -52,6 +52,7 @@
 
 .services__item {
   position: relative;
+  margin-bottom: 40px;
 
   &::before {
     content: "";
