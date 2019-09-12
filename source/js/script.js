@@ -4,7 +4,16 @@ var openPopupButton = document.querySelector('.page-header__contact--link');
 var closePopupButton = document.querySelector('.popup__button--close');
 var formPopup = document.querySelector('.popup');
 var overlay = document.querySelector('.overlay');
-var nameInput = document.querySelector('#name');
+var nameInput = document.querySelector('.popup input[name="name"]');
+var phoneInputs = document.querySelectorAll('input[type="tel"]');
+
+var phoneMask = {
+  mask: '+{7}(000)000-00-00'
+};
+
+phoneInputs.forEach(function (phone) {
+  IMask(phone, phoneMask);
+});
 
 openPopupButton.addEventListener('click', function () {
   showOverlay();
