@@ -21,8 +21,8 @@
           <img src="img/logo-header.svg" width="202" height="52" alt="Логотип компании Smart Device"/>
         </a>
         <div class="page-header__block page-header__contacts">
-          <a class="link page-header__contact page-header__contact--mail" href="mailto:info@sd.ru">info@sd.ru</p>
-          <a class="link page-header__contact page-header__contact--phone" href="tel:84950005252">+7 (495) 000 52 52</p>
+          <a class="link page-header__contact page-header__contact--mail" href="mailto:info@sd.ru">info@sd.ru</a>
+          <a class="link page-header__contact page-header__contact--phone" href="tel:84950005252">+7 (495) 000 52 52</a>
           <a class="link link--white-border page-header__contact--link" href="#">Заказать звонок</a>
         </div>
       </div>
@@ -116,31 +116,37 @@
         <li class="services__item">
           <a class="services__link services__link--production link" href="#">
             <h3>Производство печатных плат</h3>
-            <picture>
-              <source type="image/webp" srcset="img/production@1x.webp 1x, img/production@2x.webp 2x">
-              <img src="img/production@1x.jpg" srcset="img/production@2x.jpg 2x"
-                  width="370" height="620" alt="Процесс производства плат">
-            </picture>
+            <div class="services__wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/production@1x.webp 1x, img/production@2x.webp 2x">
+                <img src="img/production@1x.jpg" srcset="img/production@2x.jpg 2x"
+                    width="370" height="620" alt="Процесс производства плат">
+              </picture>
+            </div>
           </a>
         </li>
         <li class="services__item">
           <a class="services__link services__link--assembly link" href="#">
             <h3>Монтаж печатных плат</h3>
-            <picture>
-              <source type="image/webp" srcset="img/assembly@1x.webp 1x, img/assembly@2x.webp 2x">
-              <img src="img/assembly@1x.jpg" srcset="img/assembly@2x.jpg 2x"
-                  width="370" height="620" alt="Процесс монтажа плат">
-            </picture>
+            <div class="services__wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/assembly@1x.webp 1x, img/assembly@2x.webp 2x">
+                <img src="img/assembly@1x.jpg" srcset="img/assembly@2x.jpg 2x"
+                    width="370" height="620" alt="Процесс монтажа плат">
+              </picture>
+            </div>
           </a>
         </li>
         <li class="services__item">
           <a class="services__link services__link--components link" href="#">
             <h3>Комплектующие для светотехники</h3>
-            <picture>
-              <source type="image/webp" srcset="img/components@1x.webp 1x, img/components@2x.webp 2x">
-              <img src="img/components@1x.png" srcset="img/components@2x.png 2x"
-                  width="370" height="620" alt="Светодиодная лента">
-            </picture>
+            <div class="services__wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/components@1x.webp 1x, img/components@2x.webp 2x">
+                <img src="img/components@1x.png" srcset="img/components@2x.png 2x"
+                    width="370" height="620" alt="Светодиодная лента">
+              </picture>
+            </div>
           </a>
         </li>
       </ul>
@@ -152,18 +158,17 @@
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form>
-          <label class="visually-hidden" for="name">Имя</label>
-          <input type="text" placeholder="Имя"name="name" id="name" required/>
-          <label class="visually-hidden" for="phone">Телефон</label>
-          <input type="tel" placeholder="Телефон" name="phone" id="phone"
+          <label class="visually-hidden" for="feedback-name">Имя</label>
+          <input type="text" placeholder="Имя" name="name" id="feedback-name" required/>
+          <label class="visually-hidden" for="feedback-phone">Телефон</label>
+          <input type="tel" placeholder="Телефон" name="phone" id="feedback-phone"
                 pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required/>
-          <label class="visually-hidden" for="message">Текст сообщения</label>
-          <textarea placeholder="Ваш вопрос" name="message" id="message" required></textarea>
-          <input class="visually-hidden" type="checkbox" id="agreement"
-                  name="agreement" id="agreement" checked required>
-          <label for="agreement">Я согласен на обработку персональных данных</label>
+          <label class="visually-hidden" for="feedback-message">Текст сообщения</label>
+          <textarea placeholder="Ваш вопрос" name="message" id="feedback-message" required></textarea>
+          <input class="visually-hidden" type="checkbox" name="agreement" id="feedback-agreement" checked required />
+          <label for="feedback-agreement">Я согласен на обработку персональных данных</label>
           <input class="link link--white-border" type="submit"
-                  name="send-form" id="send-form" value="Задать вопрос"/>
+                  name="send-form" id="feedback-send-form" value="Задать вопрос"/>
         </form>
       </div>
     </div>
@@ -256,19 +261,17 @@
     <button class="popup__button popup__button--close" type="button">Закрыть</button>
     <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form>
-      <label class="visually-hidden" for="name">Имя</label>
-      <input type="text" placeholder="Имя" name="name" id="name" required/>
-      <label class="visually-hidden" for="phone">Телефон</label>
-      <input type="tel" placeholder="Телефон" name="phone" id="phone"
+      <label class="visually-hidden" for="popup-name">Имя</label>
+      <input type="text" placeholder="Имя" name="name" id="popup-name" required/>
+      <label class="visually-hidden" for="popup-phone">Телефон</label>
+      <input type="tel" placeholder="Телефон" name="phone" id="popup-phone"
               pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required/>
-      <label class="visually-hidden" for="message">Ваш вопрос</label>
-      <textarea placeholder="Ваш вопрос"
-                  name="message" id="message" required></textarea>
-      <input class="visually-hidden" type="checkbox" id="agreement"
-              name="agreement" id="agreement" checked required>
-      <label for="agreement">Я согласен на обработку персональных данных</label>
+      <label class="visually-hidden" for="popup-message">Ваш вопрос</label>
+      <textarea placeholder="Ваш вопрос" name="message" id="popup-message" required></textarea>
+      <input class="visually-hidden" type="checkbox" name="agreement" id="popup-agreement" checked required>
+      <label for="popup-agreement">Я согласен на обработку персональных данных</label>
       <input class="link link--white-border" type="submit"
-              name="send-form" id="send-form" value="Отправить"/>
+              name="send-form" id="popup-send-form" value="Отправить"/>
     </form>
   </div>
   <script src="https://unpkg.com/imask"></script>

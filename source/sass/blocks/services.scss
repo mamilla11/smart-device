@@ -95,10 +95,9 @@
   @media (max-width: $width-mobile) {
     max-height: 300px;
   }
-
 }
 
-.services__item picture {
+.services__wrapper {
   display: block;
   opacity: 0.2;
   width: 100%;

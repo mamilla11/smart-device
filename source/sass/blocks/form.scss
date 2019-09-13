@@ -1,4 +1,5 @@
-form {
+.feedback__container form,
+.popup form {
   color: $color-white;
   display: flex;
   flex-direction: row;
@@ -13,9 +14,12 @@ form {
   z-index: 2;
 }
 
-input[type="text"],
-input[type="tel"],
-textarea {
+.feedback__container input[type="text"],
+.feedback__container input[type="tel"],
+.feedback__container textarea,
+.popup input[type="text"],
+.popup input[type="tel"],
+.popup textarea {
   background-color: lighten($color-blue, 8%);
   border: none;
   padding: 12px 20px 16px 20px;
@@ -85,6 +89,7 @@ textarea {
   order: 1;
   width: 47.4%;
   margin-top: 3px;
+  align-self: flex-start;
 
   @media (max-width: $width-mobile) {
     width: 100%;
@@ -99,7 +104,8 @@ textarea {
   width: 100%;
 }
 
-form input[type="checkbox"] + label {
+.feedback__container input[type="checkbox"] + label, 
+.popup input[type="checkbox"] + label {
   position: relative;
   display: block;
   padding-left: 32px;
@@ -110,6 +116,8 @@ form input[type="checkbox"] + label {
   box-sizing: border-box;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
+  z-index: 11;
 
   &::before {
     content: "";
@@ -120,6 +128,8 @@ form input[type="checkbox"] + label {
     border: 1px solid $color-white;
     top: 2px;
     left: 0;
+    background: none;
+    z-index: 12;
   }
 
   @media (max-width: $width-mobile) {
@@ -137,8 +147,21 @@ form input[type="checkbox"] + label {
   }
 }
 
-input[type="checkbox"]:checked + label::before {
+.feedback__container input[type="checkbox"]:checked + label::before,
+.popup input[type="checkbox"]:checked + label::before {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: 2px 3px;
+}
+
+.feedback__container input[type="checkbox"]:hover + label,
+.feedback__container input[type="checkbox"]:focus + label,
+.popup input[type="checkbox"]:hover + label,
+.popup input[type="checkbox"]:focus + label {
+  opacity: 0.7;
+}
+
+.feedback__container input[type="checkbox"]:active + label,
+.popup input[type="checkbox"]:active + label {
+  opacity: 0.4;
 }
