@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   @media (max-width: $width-tablet) {
     flex-direction: column;
@@ -55,6 +55,11 @@
   margin-bottom: 40px;
   width: 31.5%;
   height: auto;
+  margin-right: 2.75%;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
   &::before {
     content: "";
@@ -74,6 +79,7 @@
   @media (max-width: $width-tablet) {
     width: 100%;
     margin-bottom: 48px;
+    margin-right: 0;
   }
 
   @media (max-width: $width-mobile) {
