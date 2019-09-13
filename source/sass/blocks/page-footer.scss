@@ -87,9 +87,11 @@
   @media (max-width: $width-mobile) {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
 
     &--nav,
     &--address {
+      position: relative;
       padding: 0 15px;
       width: 100%;
       box-sizing: border-box;
@@ -130,7 +132,7 @@
   }
 
   @media (max-width: $width-mobile) {
-    padding: 0 15px 28px 15px;
+    padding: 0 0 28px 15px;
   }
 }
 
@@ -156,10 +158,18 @@
   font-size: 15px;
   line-height: 25px;
 
+  &--close {
+    display: flex;
+  }
+
   @media (max-width: $width-mobile) {
     width: 80%;
     padding-top: 8px;
     padding-bottom: 10px;
+
+    &--close {
+      display: none;
+    }
   }
 }
 
@@ -269,18 +279,23 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  min-height: 100px;
+  max-height: 140px;
 
   @media (max-width: $width-tablet) {
-    flex-direction: column;
-    flex-wrap: nowrap;
+    max-height: 175px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-bottom: 20px;
   }
 }
 
 .page-footer__nav-item {
-  width: 48%;
+  width: 45%;
 
   @media (max-width: $width-tablet) {
     width: 100%;
@@ -288,7 +303,39 @@
 }
 
 .page-footer__nav {
+  display: block;
+
+  &--close {
+    display: block;
+  }
+
   @media (max-width: $width-mobile) {
-    display: none;
+    &--close {
+      display: none;
+    }
+  }
+}
+
+.page-footer__button {
+  display: none;
+
+  @media (max-width: $width-mobile) {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+    width: 16px;
+    height: 16px;
+    border: none;
+    right: 15px;
+    top: 27px;
+    background-image: url("../img/plus.svg");
+
+    &--open {
+      background-image: url("../img/minus.svg");
+    }
   }
 }

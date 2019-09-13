@@ -1,5 +1,5 @@
 .popup {
-  position: absolute;
+  position: fixed;
   top: 135px;
   left: 50%;
   transform: translateX(-50%);
@@ -10,6 +10,10 @@
   color: $color-white;
   box-sizing: border-box;
   z-index: 11;
+
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
 }
 
 .popup__title {

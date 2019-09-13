@@ -23,7 +23,7 @@
         <div class="page-header__block page-header__contacts">
           <a class="link page-header__contact page-header__contact--mail" href="mailto:info@sd.ru">info@sd.ru</a>
           <a class="link page-header__contact page-header__contact--phone" href="tel:84950005252">+7 (495) 000 52 52</a>
-          <a class="link link--white-border page-header__contact--link" href="#">Заказать звонок</a>
+          <a class="link link--white-border page-header__button" href="#">Заказать звонок</a>
         </div>
       </div>
       <div class="page-header__content">
@@ -38,6 +38,7 @@
           </span>
         </a>
       </div>
+      <button class="page-header__scroll-button" type="button">Скролл вниз</button>
     </div>
   </header>
   <section class="advantages page__container">
@@ -185,7 +186,7 @@
               <li class="page-footer__social-item">
                 <a class="link link--iconed" href="#" aria-label="Следите за нами в Facebook">
                   Facebook
-                  <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
@@ -193,7 +194,7 @@
               <li class="page-footer__social-item">
                 <a class="link link--iconed" href="#" aria-label="Следите за нами в Одноклассники">
                   Одноклассники
-                  <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27">
                     <use xlink:href="#icon-od"></use>
                   </svg>
                 </a>
@@ -201,7 +202,7 @@
               <li class="page-footer__social-item">
                 <a class="link link--iconed" href="#" aria-label="Следите за нами в ВКонтакте">
                   ВКонтакте
-                  <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
@@ -211,34 +212,40 @@
         </div>
         <div class="page-footer__block page-footer__block--nav">
           <p class="page-footer__title">Разделы сайта</p>
+          <button class="page-footer__button page-footer__button--open" aria-label="Показать разделы сайта">
+            Открыть
+          </button>
           <nav class="page-footer__nav">
             <ul class="page-footer__nav-list">
                 <li class="page-footer__nav-item">
                   <a class="link link--text" href="#">О компании</a>
                 </li>
                 <li class="page-footer__nav-item">
-                  <a class="link link--text" href="#">Комплектующие</a>
-                </li>
-                <li class="page-footer__nav-item">
                   <a class="link link--text" href="#">Продукты</a>
-                </li>
-                <li class="page-footer__nav-item">
-                  <a class="link link--text" href="#">Доставка</a>
                 </li>
                 <li class="page-footer__nav-item">
                   <a class="link link--text" href="#">Производство печатных плат</a>
                 </li>
                 <li class="page-footer__nav-item">
-                  <a class="link link--text" href="#">Контакты</a>
+                  <a class="link link--text" href="#">Монтаж печатных плат</a>
                 </li>
                 <li class="page-footer__nav-item">
-                  <a class="link link--text" href="#">Монтаж печатных плат</a>
+                  <a class="link link--text" href="#">Комплектующие</a>
+                </li>
+                <li class="page-footer__nav-item">
+                  <a class="link link--text" href="#">Доставка</a>
+                </li>
+                <li class="page-footer__nav-item">
+                  <a class="link link--text" href="#">Контакты</a>
                 </li>
               </ul>
           </nav>
         </div>
         <div class="page-footer__block page-footer__block--address">
           <p class="page-footer__title">Наш офис</p>
+          <button class="page-footer__button page-footer__button--open" aria-label="Показать разделы сайта">
+            Открыть
+          </button>
           <p class="page-footer__address">
             <span>г. Мытищи, Олимпийский проспект, д.10</span>
             <a class="link link--text" href="tel:84955894050">+7 (495) 589-40-50</a>
