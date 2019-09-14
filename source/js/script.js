@@ -16,62 +16,88 @@ var phoneMask = {
   mask: '+{7}(000)000-00-00'
 };
 
-phoneInputs.forEach(function (phone) {
-  IMask(phone, phoneMask);
-});
+if (phoneInputs) {
+  phoneInputs.forEach(function (phone) {
+    IMask(phone, phoneMask);
+  });
+}
 
-navButton.addEventListener('click', function () {
-  navButton.classList.toggle('page-footer__button--open');
-  navItem.classList.toggle('page-footer__nav--close');
-});
+if (navButton && navItem) {
+  navButton.addEventListener('click', function () {
+    navButton.classList.toggle('page-footer__button--open');
+    navItem.classList.toggle('page-footer__nav--close');
+  });
+}
 
-addressButton.addEventListener('click', function () {
-  addressButton.classList.toggle('page-footer__button--open');
-  addressItem.classList.toggle('page-footer__address--close');
-});
+if (addressButton && addressItem) {
+  addressButton.addEventListener('click', function () {
+    addressButton.classList.toggle('page-footer__button--open');
+    addressItem.classList.toggle('page-footer__address--close');
+  });
+}
 
-openPopupButton.addEventListener('click', function () {
-  showOverlay();
-  showPopup();
-  nameInput.focus();
-});
+if (openPopupButton) {
+  openPopupButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    showPopup();
+  });
+}
 
-closePopupButton.addEventListener('click', function () {
-  hideOverlay();
-  closePopup();
-});
+if (closePopupButton) {
+  closePopupButton.addEventListener('click', function () {
+    closePopup();
+  });
+}
 
-overlay.addEventListener('click', function () {
-  hideOverlay();
-  closePopup();
-});
+if (overlay) {
+  overlay.addEventListener('click', function () {
+    closePopup();
+  });
+}
 
 window.addEventListener('keydown', function (evt) {
   var escape = 27;
   if (evt.keyCode === escape) {
-    hideOverlay();
     closePopup();
   }
 });
 
-scrollButton.addEventListener('click', function () {
-  document.querySelector('.advantages').scrollIntoView({
-    behavior: 'smooth'
+if (scrollButton) {
+  scrollButton.addEventListener('click', function () {
+    document.querySelector('.advantages').scrollIntoView({
+      behavior: 'smooth'
+    });
   });
-});
+}
 
 var showPopup = function () {
-  formPopup.classList.remove('visually-hidden');
+  showOverlay();
+
+  if (formPopup) {
+    formPopup.classList.remove('visually-hidden');
+  }
+
+  if (nameInput) {
+    nameInput.focus();
+  }
 };
 
 var closePopup = function () {
-  formPopup.classList.add('visually-hidden');
+  hideOverlay();
+
+  if (formPopup) {
+    formPopup.classList.add('visually-hidden');
+  }
 };
 
 var showOverlay = function () {
-  overlay.classList.add('overlay--show');
+  if (overlay) {
+    overlay.classList.add('overlay--show');
+  }
 };
 
 var hideOverlay = function () {
-  overlay.classList.remove('overlay--show');
+  if (overlay) {
+    overlay.classList.remove('overlay--show');
+  }
 };
