@@ -14,10 +14,12 @@
   &:hover,
   &:focus {
     opacity: 0.7;
+    transition: opacity 0.4s ease;
   }
 
   &:active {
     opacity: 0.4;
+    transition: opacity 0.4s ease;
   }
 
   &--white-border,

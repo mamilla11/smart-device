@@ -28,10 +28,12 @@
 
   &:hover {
     box-shadow: 0 0 0 2px $color-white;
+    transition: box-shadow 0.4s ease;
   }
 
   &:focus {
     outline-color: $color-white;
+    transition: outline-color 0.4s ease;
   }
 
   &::placeholder {
@@ -104,7 +106,7 @@
   width: 100%;
 }
 
-.feedback__container input[type="checkbox"] + label, 
+.feedback__container input[type="checkbox"] + label,
 .popup input[type="checkbox"] + label {
   position: relative;
   display: block;
@@ -159,9 +161,11 @@
 .popup input[type="checkbox"]:hover + label,
 .popup input[type="checkbox"]:focus + label {
   opacity: 0.7;
+  transition: opacity 0.4s ease;
 }
 
 .feedback__container input[type="checkbox"]:active + label,
 .popup input[type="checkbox"]:active + label {
+  transition: opacity 0.4s ease;
   opacity: 0.4;
 }
