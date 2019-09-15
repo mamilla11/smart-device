@@ -16,7 +16,7 @@ var phoneMask = {
   mask: '+{7}(000)000-00-00'
 };
 
-if (phoneInputs) {
+if (phoneInputs.length) {
   phoneInputs.forEach(function (phone) {
     IMask(phone, phoneMask);
   });
