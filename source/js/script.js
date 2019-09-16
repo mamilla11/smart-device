@@ -18,7 +18,9 @@ var phoneMask = {
 
 if (phoneInputs.length) {
   phoneInputs.forEach(function (phone) {
+    /* eslint-disable */
     IMask(phone, phoneMask);
+    /* eslint-enable */
   });
 }
 
