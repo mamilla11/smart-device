@@ -1,5 +1,6 @@
 'use strict';
 
+var page = document.querySelector('.page');
 var openPopupButton = document.querySelector('.page-header__button');
 var closePopupButton = document.querySelector('.popup__button--close');
 var formPopup = document.querySelector('.popup');
@@ -74,6 +75,7 @@ if (scrollButton) {
 
 var showPopup = function () {
   showOverlay();
+  disablePageScroll();
 
   if (formPopup) {
     formPopup.classList.remove('visually-hidden');
@@ -86,6 +88,7 @@ var showPopup = function () {
 
 var closePopup = function () {
   hideOverlay();
+  enablePageScroll();
 
   if (formPopup) {
     formPopup.classList.add('visually-hidden');
@@ -101,5 +104,17 @@ var showOverlay = function () {
 var hideOverlay = function () {
   if (overlay) {
     overlay.classList.remove('overlay--show');
+  }
+};
+
+var disablePageScroll = function () {
+  if (page) {
+    page.style.overflow = 'hidden';
+  }
+};
+
+var enablePageScroll = function () {
+  if (page) {
+    page.style.overflow = 'auto';
   }
 };
