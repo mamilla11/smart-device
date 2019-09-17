@@ -88,7 +88,6 @@
 }
 
 .feedback__container input[type="submit"] {
-  order: 1;
   width: 47.4%;
   margin-top: 3px;
   align-self: flex-start;
@@ -100,21 +99,19 @@
 }
 
 .popup input[type="submit"] {
-  order: 1;
   margin-top: 0;
   margin-bottom: 27px;
   width: 100%;
 }
 
-.feedback__container input[type="checkbox"] + label,
-.popup input[type="checkbox"] + label {
+.feedback__container .feedback__agreement,
+.popup .popup__agreement {
   position: relative;
   display: block;
   padding-left: 32px;
   margin-top: 6px;
   margin-left: 6px;
   width: 47%;
-  order: 2;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 16px;
@@ -122,6 +119,14 @@
   z-index: 11;
   transition: opacity 0.4s ease;
 
+  @media (max-width: $width-mobile) {
+    margin-left: 3px;
+    width: 100%;
+  }
+}
+
+.feedback__container label span,
+.popup label span {
   &::before {
     content: "";
     position: absolute;
@@ -134,37 +139,35 @@
     background: none;
     z-index: 12;
   }
-
-  @media (max-width: $width-mobile) {
-    margin-left: 3px;
-    width: 100%;
-  }
 }
 
-.popup input[type="checkbox"] + label {
+.popup .popup__agreement {
   margin-left: 16px;
+  margin-bottom: 20px;
   width: 90%;
+}
 
+.popup label span {
   &::before {
     left: -15px;
   }
 }
 
-.feedback__container input[type="checkbox"]:checked + label::before,
-.popup input[type="checkbox"]:checked + label::before {
+.feedback__container input[type="checkbox"]:checked + span::before,
+.popup input[type="checkbox"]:checked + span::before {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: 2px 3px;
 }
 
-.feedback__container input[type="checkbox"]:hover + label,
-.feedback__container input[type="checkbox"]:focus + label,
-.popup input[type="checkbox"]:hover + label,
-.popup input[type="checkbox"]:focus + label {
+.feedback__container input[type="checkbox"]:hover + span,
+.feedback__container input[type="checkbox"]:focus + span,
+.popup input[type="checkbox"]:hover + span,
+.popup input[type="checkbox"]:focus + span {
   opacity: 0.7;
 }
 
-.feedback__container input[type="checkbox"]:active + label,
-.popup input[type="checkbox"]:active + label {
+.feedback__container input[type="checkbox"]:active + span,
+.popup input[type="checkbox"]:active + span {
   opacity: 0.4;
 }
