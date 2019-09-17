@@ -326,13 +326,14 @@
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
+    background-position: 95% 27px;
     font-size: 0;
     line-height: 0;
-    width: 16px;
-    height: 16px;
+    width: 100%;
+    height: 100%;
     border: none;
-    right: 15px;
-    top: 27px;
+    left: 0;
+    top: 0;
     background-image: url("../img/plus.svg");
 
     &--open {
