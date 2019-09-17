@@ -279,14 +279,14 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   min-height: 100px;
-  max-height: 140px;
 
   @media (max-width: $width-tablet) {
-    max-height: 175px;
+    flex-direction: column;
+    min-height: 175px;
   }
 
   @media (max-width: $width-mobile) {
@@ -296,6 +296,7 @@
 
 .page-footer__nav-item {
   width: 45%;
+  margin-right: 20px;
 
   @media (max-width: $width-tablet) {
     width: 100%;
